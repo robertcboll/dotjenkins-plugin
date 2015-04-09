@@ -37,7 +37,7 @@ public class DotJenkinsSyncBuilder extends Builder {
       this.directory = directory;
     }
     log.error("directory is " + this.directory);
-    
+
     this.delegate = new ExecuteDslScripts(
         new ExecuteDslScripts.ScriptLocation("", this.directory + SUFFIX, ""),
         IGNORE_EXISTING,
